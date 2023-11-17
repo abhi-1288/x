@@ -14,7 +14,7 @@ const Navbar = (props) => {
                     <MyFab onClick={props.onClick} >
                         <ListIcon />
                     </MyFab>
-                    <h1 className='text-white text-2xl '> META VERIFICATION CENTER </h1>
+                    <h1 className='text-white text-2xl '> META VERIFICATION CENTERE_ </h1>
                 </div>
                 <ul className='flex'>
                 </ul>

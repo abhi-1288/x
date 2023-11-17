@@ -19,12 +19,12 @@ const Err = () => {
         >
             <div className='md:flex grid md:justify-center items-center'>
                 <img src="icons8-meta-100.png" alt="?" className='mx-4 flex ' />
-                <Typography variant="h1" color="primary" gutterBottom>
+                <Typography variant="h1" sx={{ color: 'blue' }} gutterBottom>
                     404
                 </Typography>
             </div>
 
-            <Typography variant="h5" color="HighlightText" paragraph>
+            <Typography variant="h5" sx={{ color: 'blue' }} color="HighlightText" paragraph>
                 Oops! The page you are looking for might be in another castle.
             </Typography>
             <Button

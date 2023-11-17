@@ -13,6 +13,7 @@ const Dashboard = () => {
     localStorage.setItem('authenticated', 'false');
     // Use the Navigate component to redirect the user to the login page
     location.reload();
+    
     navigate('/');
   };
 

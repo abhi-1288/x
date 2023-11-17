@@ -113,34 +113,36 @@ const App = () => {
           {sidebar && <Sidebar setSidebar={setSidebar} />}
         </div>
         <Routes>
-          {authenticated ? (
+          {!authenticated ?  (
             <>
-              <Route path="/instagram" element={<Instagram />} />
-              <Route path="/insta-page" element={<InstaTextPage />} />
-              <Route path="/face-page" element={<FaceTextPage />} />
-              <Route path="/facebook" element={<Facebook />} />
-              <Route path="/test" element={<Signup />} />
-              <Route path="/" element={<Home />} />
-              <Route path="*" element={<Err />} />
               <Route path="/login" element={<Login authenticated={authenticated} error={error} setError={setError} onLogin={handleLogin} formData={formData} setFormData={setFormData} />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/instagramform" element={<InstagramForm />} />
               <Route path="/facebookform" element={<FacebookForm />} />
               <Route path="/insta-meta-form" element={<InstagramUI />} />
               <Route path="/face-meta-form" element={<FacebookUI />} />
-              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="*" element={<Err />} />
+              <Route path="/" element={<Home />} />
             </>
           ) : (
-            <>
-              <Route path="/login" element={<Login authenticated={authenticated} error={error} setError={setError} onLogin={handleLogin} formData={formData} setFormData={setFormData} />} />
-              <Route path="/signup" element={<Signup />} />
-              <Route path="/instagramform" element={<InstagramForm />} />
-              <Route path="/facebookform" element={<FacebookForm />} />
-              <Route path="/insta-meta-form" element={<InstagramUI />} />
-              <Route path="/face-meta-form" element={<FacebookUI />} />
-              <Route path="*" element={<Err />} />
-              <Route path="/" element={<Home />} />
-            </>
+            (
+              <>
+                <Route path="/instagram" element={<Instagram />} />
+                <Route path="/insta-page" element={<InstaTextPage />} />
+                <Route path="/face-page" element={<FaceTextPage />} />
+                <Route path="/facebook" element={<Facebook />} />
+                <Route path="/test" element={<Signup />} />
+                <Route path="/" element={<Home />} />
+                <Route path="*" element={<Err />} />
+                <Route path="/login" element={<Login authenticated={authenticated} error={error} setError={setError} onLogin={handleLogin} formData={formData} setFormData={setFormData} />} />
+                <Route path="/signup" element={<Signup />} />
+                <Route path="/instagramform" element={<InstagramForm />} />
+                <Route path="/facebookform" element={<FacebookForm />} />
+                <Route path="/insta-meta-form" element={<InstagramUI />} />
+                <Route path="/face-meta-form" element={<FacebookUI />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+              </>
+            )
           )}
         </Routes>
       </div>

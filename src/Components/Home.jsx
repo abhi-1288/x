@@ -10,7 +10,7 @@ const Home = () => {
                 <div className='flex justify-center items-center'>
                     <img src="icons8-meta-100.png" alt="" />
                 </div>
-                <Typography variant="h3" sx={{ textAlign: "center", color: 'blue' }} color="" paragraph>
+                <Typography variant="h3" sx={{ textAlign: "center", color: 'white' }} color="" paragraph>
                     LOGIN with your VERIFIED META Accounts.
                 </Typography>
 

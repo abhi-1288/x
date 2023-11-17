@@ -13,7 +13,7 @@ const Dashboard = () => {
     localStorage.setItem('authenticated', 'false');
     // Use the Navigate component to redirect the user to the login page
     location.reload();
-    
+
     navigate('/');
   };
 
@@ -66,7 +66,7 @@ const Dashboard = () => {
     <Container maxWidth="md" className="my-8">
         {/* ToastContainer for notifications */}
       {/* <ToastContainer /> */}
-      <Typography variant="h4" color="HighlightText" gutterBottom>
+      <Typography variant="h4" sx={{ color: "white" }} color="HighlightText" gutterBottom>
         Welcome to the Dashboard
       </Typography>
       {/* Your dashboard content goes here */}

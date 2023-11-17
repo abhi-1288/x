@@ -24,8 +24,8 @@ const Err = () => {
                 </Typography>
             </div>
 
-            <Typography variant="h5" sx={{ color: 'blue' }} color="HighlightText" paragraph>
-                Oops! The page you are looking for might be in another castle.
+            <Typography variant="h5" sx={{ color: 'white' }} color="HighlightText" paragraph>
+                Oops! The page you are looking for, <br/> might be in another castle.
             </Typography>
             <Button
                 component={Link}
